@@ -5,18 +5,18 @@
 }
 
 :root {
-    --orange: #ff6b35;
-    --orange-light: #ff8c5a;
-    --orange-dark: #e55a2b;
-    --blue: #1e90ff;
-    --blue-light: #4da6ff;
-    --blue-dark: #0066cc;
-    --dark-bg: #0a0a0f;
+    --forest-green: #228B22;
+    --leaf-green: #32CD32;
+    --earth-brown: #8B4513;
+    --sky-blue: #87CEEB;
+    --sun-yellow: #FFD700;
+    --dark-bg: #0a1f0a; /* latar belakang hijau tua */
     --card-bg: rgba(255, 255, 255, 0.05);
     --text-primary: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.7);
     --glass-border: rgba(255, 255, 255, 0.1);
 }
+
 
 body {
     font-family: 'Inter', sans-serif;
@@ -35,7 +35,7 @@ body {
     height: 100%;
     z-index: -1;
     overflow: hidden;
-    background: var(--dark-bg);
+    background: linear-gradient(180deg, var(--sky-blue) 0%, var(--forest-green) 100%);
 }
 
 /* Floating Emojis */
@@ -69,7 +69,7 @@ header {
 
 .badge {
     display: inline-block;
-    background: var(--orange);
+    background: linear-gradient(180deg, var(--leaf-green), var(--sky-blue));
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.85rem;
@@ -327,11 +327,11 @@ footer {
     text-align: center;
     padding: 40px 20px;
     border-top: 1px solid var(--glass-border);
-    background: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, var(--earth-brown), var(--forest-green));
 }
 
 .footer-text {
-    color: var(--text-secondary);
+    color: var(--sun-yellow);
     font-size: 0.9rem;
 }
 
@@ -358,4 +358,26 @@ footer {
     .member-card {
         max-width: 100%;
     }
+}
+
+/* Role-based colors */
+.member-card.leader .profile-ring {
+    background: var(--sun-yellow);
+}
+.member-card.leader .status-dot {
+    background: var(--sun-yellow);
+}
+
+.member-card.dev .profile-ring {
+    background: var(--sky-blue);
+}
+.member-card.dev .status-dot {
+    background: var(--sky-blue);
+}
+
+.member-card.qa .profile-ring {
+    background: var(--leaf-green);
+}
+.member-card.qa .status-dot {
+    background: var(--leaf-green);
 }
