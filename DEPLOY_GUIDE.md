@@ -116,7 +116,7 @@ git push
 
 Contoh:
 ```bash
-git add .
+git add .   
 git commit -m "Update: ganti foto profil team"
 git push
 ```
