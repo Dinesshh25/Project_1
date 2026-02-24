@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 from show_transaction import *
-=======
 from add_income import add_income
->>>>>>> aa1c90274d255629f59947c084b7d69d6c84f5bb
-
+from add_expense import add_expense
+from calculate_total import calculate_total_expense
+from add_expense import add_expense
 transactions = [
     {"type": "income", "amount": 5000, "description": "Gaji"},
     {"type": "expense", "amount": 1500, "description": "Belanja bulanan"},  
