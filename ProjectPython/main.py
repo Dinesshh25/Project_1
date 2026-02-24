@@ -1,5 +1,5 @@
-from add_income import add_income
-from delete_transaction import delete_transaction
+from add_income import add_income , save_transactions
+from delete_transaction import delete_transaction 
 
 transactions = [
     {"type": "income", "amount": 5000, "description": "Gaji"},
@@ -23,6 +23,8 @@ def main():
 
         if choice == "1":
             add_income(transactions)
+            save_transactions(transactions)
+            print(transactions) 
         elif choice == "2":
             add_expense(transactions)
         elif choice == "3":
