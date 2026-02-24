@@ -1,4 +1,12 @@
+from show_transaction import *
 
+transactions = [
+    {"type": "income", "amount": 5000, "description": "Gaji"},
+    {"type": "expense", "amount": 1500, "description": "Belanja bulanan"},  
+    {"type": "expense", "amount": 200, "description": "Makan di luar"},
+    {"type": "income", "amount": 2000, "description": "Freelance"},
+    {"type": "expense", "amount": 300, "description": "Transportasi"},
+]
 
 def main():
     while True:
@@ -17,7 +25,7 @@ def main():
         elif choice == "2":
             add_expense(transactions)
         elif choice == "3":
-            show_transactions(transactions)
+            show_transaction(transactions)
         elif choice == "4":
             delete_transaction(transactions)
         elif choice == "5":
