@@ -1,4 +1,4 @@
-
+from add_income import add_income
 from delete_transaction import delete_transaction
 
 transactions = [
