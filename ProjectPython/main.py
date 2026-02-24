@@ -1,4 +1,12 @@
+from add_income import add_income
 
+transactions = [
+    {"type": "income", "amount": 5000, "description": "Gaji"},
+    {"type": "expense", "amount": 1500, "description": "Belanja bulanan"},  
+    {"type": "expense", "amount": 200, "description": "Makan di luar"},
+    {"type": "income", "amount": 2000, "description": "Freelance"},
+    {"type": "expense", "amount": 300, "description": "Transportasi"},
+]
 
 def main():
     while True:
