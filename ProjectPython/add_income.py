@@ -29,7 +29,3 @@ def add_income(transactions):
     transactions.append(transaction)
 
     print("Pemasukan berhasil ditambahkan!")
-
-def save_transactions(transactions):
-    with open("transactions.json", "w") as file:
-        json.dump(transactions, file, indent=4)
