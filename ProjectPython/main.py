@@ -3,6 +3,10 @@ from add_income import add_income
 from add_expense import add_expense
 from calculate_total import calculate_total_expense
 from add_expense import add_expense
+from add_income import add_income , save_transactions
+from delete_transaction import delete_transaction 
+from show_transaction import *
+
 transactions = [
     {"type": "income", "amount": 5000, "description": "Gaji"},
     {"type": "expense", "amount": 1500, "description": "Belanja bulanan"},  
@@ -25,6 +29,8 @@ def main():
 
         if choice == "1":
             add_income(transactions)
+            save_transactions(transactions)
+            print(transactions) 
         elif choice == "2":
             add_expense(transactions)
         elif choice == "3":
