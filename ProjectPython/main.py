@@ -1,4 +1,5 @@
 from show_transaction import *
+from add_income import add_income
 
 transactions = [
     {"type": "income", "amount": 5000, "description": "Gaji"},
