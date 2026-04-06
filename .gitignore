@@ -1,0 +1,14 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+venv/
+env/
+.env
+
+# Data & Logs (Opsional untuk Beaply)
+*.log
+ProjectPython/data.json

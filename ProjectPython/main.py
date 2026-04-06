@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import json
 import os
 from add_income import add_income
@@ -5,6 +6,10 @@ from add_expense import add_expense
 from show_transaction import show_transaction
 from delete_transaction import delete_transaction
 from calculate_total import calculate_total_expense
+=======
+from show_transaction import *
+from add_income import add_income
+>>>>>>> hasan-nashrullah
 
 # Mendapatkan lokasi folder tempat file ini berada
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
